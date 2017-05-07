@@ -15,10 +15,13 @@ colors
 
 setopt prompt_subst
 autoload -Uz vcs_info
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}-"
 zstyle ':vcs_info:*' actionformats \
-	    '%F{5}[%F{2}%b%F{7}:%F{6}%r%F{3}|%F{1}%a%F{5}]%f'
+        '%F{5}[%F{2}%b%F{7}:%F{6}%r%F{3}|%F{1}%a%F{5}]%f'
 zstyle ':vcs_info:*' formats \
-	    '%F{5}[%F{2}%b%F{7}:%F{6}%r%F{5}]%f'
+        '%F{5}[%F{2}%c%u%b%F{7}:%F{6}%r%F{5}]%f'
 zstyle ':vcs_info:*' enable git
 
 vcs_info_wrapper() {
