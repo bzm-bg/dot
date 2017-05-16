@@ -2,8 +2,8 @@ export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000000
+SAVEHIST=1000000
 setopt share_history
 autoload -U compinit
 compinit
@@ -38,8 +38,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 alias ls='ls -G'
-alias ll='ls -l -G'
-alias la='ll -a'
+alias ll='ls -la -G'
 export LSCOLORS=gxfxcxdxbxegedabagacad
 alias sed='gsed'
 
