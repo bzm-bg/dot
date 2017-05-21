@@ -1,10 +1,3 @@
-if has('vim_starting')
-	set nocompatible
-
-	" Required
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
 set tabstop=4
 set shiftwidth=4
 set autoindent

@@ -1,3 +1,8 @@
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
 export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
@@ -41,18 +46,4 @@ alias ls='ls -G'
 alias ll='ls -la -G'
 export LSCOLORS=gxfxcxdxbxegedabagacad
 alias sed='gsed'
-
-# Add environment variable ANT_ROOT for cocos2d-x
-export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/libexec/bin
-export PATH=$ANT_ROOT:$PATH
-
-# Add environment variable NDK_ROOT for cocos2d-x
-export NDK_ROOT=/Users/tokuda/AndroidDev/android-ndk-r10d
-export PATH=$NDK_ROOT:$PATH
-
-setopt nonomatch
-
-# Add environment varialbe CABAL_PATH for cabal
-export CABAL_PATH=$HOME/.cabal/bin
-export PATH=$CABAL_PATH:$PATH
 
